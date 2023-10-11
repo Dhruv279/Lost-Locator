@@ -1,0 +1,139 @@
+/* Reset some default styles to start fresh */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    /* background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg); */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2em;
+}
+nav {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+    /* Change color on hover */
+}
+ 
+.head{
+    text-align: center;
+}
+/* Main content container */
+#main-content {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Section headings */
+#main-content h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Section paragraphs */
+#main-content p {
+    margin-bottom: 15px;
+}
+
+/* Links */
+#main-content a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#main-content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Responsive styles (adjust as needed) */
+@media (max-width: 768px) {
+    #main-content {
+        margin: 10px;
+    }
+}
+
+#lost-and-found {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    height: 400px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 50px; /* Add margin to create space between cards */
+}
+
+.card:last-child {
+    margin-right: 0; /* Remove margin from the last card */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.card img{
+    height: 200px;
+}

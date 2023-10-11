@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+}
+
+.logo {
+    width: 160px;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+}
+
+.header {
+    z-index: 1000;
+}
+
+nav {
+    padding: 1px 17%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgba(255, 255, 255); */
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 2px 60px;
+    padding-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(18, 91, 94);
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a:hover {
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 5px 20px 30px rgb(85 85 85 /10%);
+}
+
+.home {
+    padding: 150px 17%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(/beach1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.home .homeT .static-text {
+    font-weight: 600;
+    font-size: 120px;
+    font-weight: lighter;
+    font-family: 'Paytone One', sans-serif;
+    color: rgb(45, 105, 120);
+    left: 26%;
+}
+
+.animated-text {
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: 60%;
+    left: 26%;
+    padding: 0 40px;
+    height: 65px;
+    color: rgb(45, 105, 120);
+    overflow: hidden;
+}
+
+.line {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.line:first-child {
+    animation: anim 8s infinite;
+}
+
+@keyframes anim {
+    0% {
+        margin-top: 0;
+    }
+
+    16% {
+        margin-top: -90px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: -250px;
+    }
+
+    66% {
+        margin-top: -330px;
+    }
+}
+
+/* .packages{
+    width: 100%;
+    padding: 1px 17%;
+    height: 100vh;
+    display: flex;
+} */
+.about-us {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+}
+
+.navbar-color {
+    background: #000;
+    width: 100%;
+}
+
+nav.sticky {
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0 1px 4px rgba(60, 56, 56, 0.3), 0 0 40px rgba(123, 118, 118, 0.1) inset;
+}
+
+.heading {
+    text-decoration: none;
+    list-style: none;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.heading li span {
+    position: relative;
+}
+
+.heading li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    background: white;
+    border-left: 5px solid black;
+    animation: typing 2s steps(20, end) infinite, 
+    blink .1s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes typing {
+    40%,70% {
+        left: 100%;
+        margin: 0 -10% 0 1%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.container {
+    padding: 10% 17%;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    padding: 10% 12%;
+    height: 100vh;
+    text-align: center;
+}
+
+.container .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.container .boxes img {
+    margin-top: 10px;
+    width: 540px;
+    padding: 30px;
+    height: 510px;
+}
+
+img.rounded-corners {
+    border-radius: 45px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location{
+    padding-left: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+.stars{
+    align-items: center;
+    font-size: 20px;
+}
+.more_packages{
+    margin-top: 30px;
+    margin-left:87%;
+}
+.more_packages .button{
+    background-color:cadetblue;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 26px;
+    color: black;
+    font-weight: bold;
+}
